@@ -9,15 +9,6 @@ Works with:
 
 ---
 
-## Features
-
-* Upload any file via `file`
-* Optional update post (changelog)
-* No external dependencies (`jq`, `gh`, etc.)
-* Simple and predictable
-
----
-
 ## Inputs
 
 | Name          | Required | Description                     |
