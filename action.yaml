@@ -1,0 +1,45 @@
+name: "BuiltByBit Release Publisher"
+description: "Publish a BuiltByBit release with a specified version and file asset."
+
+inputs:
+  api_token:
+    description: "BuiltByBit API token"
+    required: true
+
+  resource_id:
+    description: "BuiltByBit resource ID"
+    required: true
+
+  api_url:
+    description: "BuiltByBit API endpoint"
+    required: false
+    default: "https://api.builtbybit.com/v2/resources/creator/update"
+
+  version:
+    required: true
+    description: "Version name to publish (e.g., 1.0.0)"
+
+  file:
+    required: true
+    description: "Path to file or release asset to upload"
+
+  post_update:
+    required: false
+    description: "Whether or not to post an update alongside the new version."
+    default: "false"
+
+  title:
+    required: false
+    description: "Update Release title"
+
+  message:
+    required: false
+    description: "Update Release message/changelog"
+
+runs:
+  using: "node20"
+  main: "index.js"
+
+branding:
+  icon: "upload-cloud"
+  color: "blue"

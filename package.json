@@ -1,0 +1,9 @@
+{
+  "name": "builtbybit-release-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@actions/core": "^3.0.0"
+  }
+}
